@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{box-sizing: border-box;}
+html{font-size: 62.5%;}
+h1, h6{margin: 0; padding: 0;}
+body{font-family: 'Poppins', sans-serif; background: rgb(221, 221, 221); display: flex; align-items:center; justify-content: center; padding: 0; margin: 0; min-height: 100dvh; font-size: 1.6rem;}
+.quote-wrapper{width: 100%; max-width: 60rem; margin:0;}
+.quote-wrap{width: 100%; background-color: hsl(0,100%,100%); padding: 3rem; padding-top: 5rem; box-shadow: 0 0 1rem hsla(0,0%,0%,10%); border-radius: 1rem; position: relative; text-align: center; display: flex; flex-direction: column; align-items:center; gap: 3rem;}
+.quote-wrap i{font-size: 8rem; position: absolute; left: 50%; top: 0; transform: translate(-50%,-50%); content: ""; color: darkslategray;}
+.quote-wrap h1{color: darkslategray; line-height: 1.2; font-weight: 700;}
+.quote-wrap h6{font-size: 2.4rem; font-weight: 700; color: darkslategray; display: flex; align-items:center; justify-content:center; gap:1rem;}
+.quote-wrap h6::before, .quote-wrap h6::after{width: 3rem; height: .2rem; background-color: darkslategray; content: "";}
+.buttons{width: 100%; display: flex; align-items:center; justify-content: center; gap:2rem; flex-wrap:wrap;}
+.buttons > a{display: grid; place-items: center; padding: 1rem 2rem; text-align:center; font-size: 1.6rem; background-color: darkslategray; font-weight: 700; color:white; text-decoration: none; width: 100%; max-width: 15rem; border-radius:.4rem;}
+.buttons > a:first-child{background-color:rgb(9, 198, 223);}
+.buttons > a:last-child{background-color:darkgreen;}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
